@@ -5,7 +5,7 @@ const memories = [
 },
 
 {
-    image:"../assets/photos/photo2.jpg"
+    image:"../assets/photos/photo11.jpg"
 },
 
 {
