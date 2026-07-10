@@ -1,0 +1,2087 @@
+/* =========================
+GLOBAL
+========================= */
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html {
+    scroll-behavior:smooth;
+}
+
+
+body {
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffb6d9
+    );
+
+    color:#1c1c1c;
+
+    font-family:"Inter", sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+
+
+/* =========================
+HOME PAGE
+========================= */
+
+
+header {
+
+    text-align:center;
+
+    padding-top:80px;
+
+}
+
+
+.small-heart {
+
+    font-size:40px;
+
+    animation:pulse 2s infinite;
+
+}
+
+
+h1 {
+
+    font-family:"Parisienne", cursive;
+
+    font-size:110px;
+
+    font-weight:400;
+
+}
+
+
+.subtitle {
+
+    font-family:"Cormorant Garamond";
+
+    font-size:35px;
+
+    color:#8a6e63;
+
+}
+
+
+
+
+/* FLOATING CATS */
+
+
+.cat {
+
+    position:fixed;
+
+    font-size:35px;
+
+    opacity:.25;
+
+    animation:float 8s infinite ease-in-out;
+
+    z-index:0;
+
+}
+
+
+.cat1 {
+
+    top:15%;
+    left:10%;
+
+}
+
+
+.cat2 {
+
+    top:60%;
+    right:10%;
+
+    animation-delay:2s;
+
+}
+
+
+.cat3 {
+
+    bottom:10%;
+    left:45%;
+
+    animation-delay:4s;
+
+}
+
+
+
+
+
+/* =========================
+ENVELOPE
+========================= */
+
+
+.envelope {
+
+
+    background:
+    rgba(255,255,255,.65);
+
+
+    backdrop-filter:blur(10px);
+
+
+    width:300px;
+
+
+    margin:60px auto;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.1);
+
+
+    transition:.4s;
+
+
+}
+
+
+.envelope:hover {
+
+    transform:
+
+    translateY(-10px)
+    scale(1.05);
+
+}
+
+
+.envelope-icon {
+
+    font-size:70px;
+
+}
+
+
+
+
+
+/* =========================
+TIMER
+========================= */
+
+
+.timer-section {
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+
+.timer {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.timer div {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    min-width:120px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.1);
+
+
+}
+
+
+
+.timer span {
+
+
+    font-family:"Cormorant Garamond";
+
+
+    font-size:55px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+.timer p {
+
+    color:#8a6e63;
+
+}
+
+
+
+
+
+/* =========================
+HOME MENU
+========================= */
+
+
+.menu {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+
+    gap:35px;
+
+
+    padding:70px;
+
+
+}
+
+
+
+
+.card {
+
+    height:180px;
+
+    background:
+
+    rgba(255,255,255,.75);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-12px);
+
+}
+
+
+.card div {
+
+    font-size:45px;
+
+}
+
+
+
+.card h3 {
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    color:#5d443d;
+
+    margin-top:5px;
+
+    text-align:center;
+
+}
+
+
+
+
+footer {
+
+    text-align:center;
+
+    padding:50px;
+
+    color:#8a6e63;
+
+}
+
+
+
+/* =========================
+BACK BUTTON
+========================= */
+
+
+.back-button {
+
+
+    position:fixed;
+
+
+    top:30px;
+
+    left:30px;
+
+
+    background:
+
+    rgba(255,255,255,.75);
+
+
+    backdrop-filter:blur(10px);
+
+
+    padding:12px 25px;
+
+
+    border-radius:30px;
+
+
+    font-family:"Cormorant Garamond";
+
+
+    font-size:24px;
+
+
+    z-index:100;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.12);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.back-button:hover {
+
+    transform:translateX(-5px);
+
+}
+
+
+
+/* =========================
+LOVE LETTER PAGE
+========================= */
+
+
+.letter-page {
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff8f3,
+        #f3dfd8
+    );
+
+    padding-bottom:80px;
+
+}
+
+
+
+/* BACKGROUND HEARTS */
+
+.floating-heart {
+
+    position:fixed;
+
+    font-size:45px;
+
+    color:#d89a9a;
+
+    opacity:.35;
+
+    animation:floatHeart 8s infinite ease-in-out;
+
+    z-index:0;
+
+}
+
+
+
+.heart1 {
+
+    top:20%;
+
+    left:10%;
+
+}
+
+
+
+.heart2 {
+
+    top:55%;
+
+    right:15%;
+
+    animation-delay:2s;
+
+}
+
+
+
+.heart3 {
+
+    bottom:20%;
+
+    left:20%;
+
+    animation-delay:4s;
+
+}
+
+
+
+
+/* SLEEPING CAT */
+
+
+.sleeping-cat {
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:40px;
+
+    font-size:65px;
+
+    animation:
+
+    catSleep 3s infinite ease-in-out;
+
+}
+
+
+
+
+
+/* LETTER CONTAINER */
+
+
+.letter-wrapper {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:70px 20px;
+
+
+}
+
+
+
+
+
+/* PAPER */
+
+
+.paper {
+
+
+    position:relative;
+
+
+    max-width:900px;
+
+
+    width:100%;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        #fffdf9,
+        #fff8f0
+    );
+
+
+    padding:80px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.15);
+
+
+    animation:
+
+    paperAppear 1.2s ease;
+
+
+}
+
+
+
+/* INNER BORDER */
+
+
+.paper::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:25px;
+
+
+    border:
+
+    1px solid rgba(150,100,80,.25);
+
+
+    border-radius:20px;
+
+
+    pointer-events:none;
+
+
+}
+
+
+
+
+
+/* TITLE */
+
+
+.letter-title {
+
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+
+}
+
+
+
+.letter-title h1 {
+
+
+    font-family:"Parisienne", cursive;
+
+
+    font-size:100px;
+
+
+    font-weight:400;
+
+
+    color:#5d443d;
+
+
+}
+
+
+
+.letter-title p {
+
+
+    font-family:"Cormorant Garamond";
+
+
+    font-size:32px;
+
+
+    color:#a77b70;
+
+
+}
+
+
+
+
+
+/* LETTER TEXT */
+
+
+.letter-content {
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+    font-family:"Cormorant Garamond";
+
+
+    font-size:27px;
+
+
+    line-height:1.9;
+
+
+    color:#3d302c;
+
+
+}
+
+
+
+
+.letter-content p {
+
+
+    margin-bottom:35px;
+
+
+    animation:
+
+    fadeText .8s ease;
+
+
+}
+
+
+
+
+
+/* SIGNATURE */
+
+
+.signature {
+
+
+    margin-top:70px;
+
+
+    text-align:right;
+
+
+    font-family:"Parisienne";
+
+
+    font-size:55px;
+
+
+    color:#5d443d;
+
+
+}
+
+
+
+.signature span {
+
+
+    font-size:75px;
+
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes paperAppear {
+
+
+    from {
+
+
+        opacity:0;
+
+        transform:
+
+        translateY(40px)
+        scale(.96);
+
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:
+
+        translateY(0)
+        scale(1);
+
+
+    }
+
+
+}
+
+
+
+
+@keyframes fadeText {
+
+
+    from {
+
+
+        opacity:0;
+
+        transform:
+
+        translateY(20px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+@keyframes floatHeart {
+
+
+    0%,100% {
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+
+    50% {
+
+
+        transform:
+
+        translateY(-40px);
+
+
+    }
+
+
+}
+
+
+
+
+
+@keyframes catSleep {
+
+
+    0%,100% {
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+
+    50% {
+
+
+        transform:
+
+        translateY(-10px);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+.paper {
+
+
+    padding:40px 25px;
+
+
+}
+
+
+
+.paper::before {
+
+
+    inset:15px;
+
+
+}
+
+
+
+.letter-title h1 {
+
+
+    font-size:70px;
+
+
+}
+
+
+
+.letter-title p {
+
+
+    font-size:25px;
+
+
+}
+
+
+
+.letter-content {
+
+
+    font-size:21px;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+.signature {
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.signature span {
+
+
+    font-size:55px;
+
+
+}
+
+
+
+.sleeping-cat {
+
+
+    font-size:45px;
+
+
+    right:15px;
+
+
+}
+
+
+}
+
+
+
+
+/* =========================
+GALLERY
+========================= */
+
+
+.gallery-page {
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff8f3,
+        #f6d9e6
+    );
+
+}
+
+
+
+.gallery-header {
+
+    text-align:center;
+
+    padding:70px 20px 30px;
+
+}
+
+
+
+.gallery-header h1 {
+
+    font-family:"Parisienne";
+
+    font-size:80px;
+
+}
+
+
+
+.gallery-header p {
+
+    font-family:"Cormorant Garamond";
+
+    font-size:26px;
+
+    color:#8a6e63;
+
+}
+
+
+
+
+
+.gallery-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+
+    gap:25px;
+
+
+    padding:40px;
+
+
+    max-width:1100px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+.photo-card {
+
+
+    background:#fffdf9;
+
+
+    padding:10px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+
+    0 8px 20px rgba(0,0,0,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.photo-card:hover {
+
+
+    transform:
+
+    translateY(-5px)
+
+    scale(1.03);
+
+
+}
+
+
+
+
+
+.photo-card img {
+
+
+    width:100%;
+
+
+    aspect-ratio:1;
+
+
+    object-fit:cover;
+
+
+    border-radius:10px;
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+/* remove captions */
+
+.photo-card h3,
+.photo-card p {
+
+    display:none;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.gallery-grid {
+
+    grid-template-columns:repeat(2,1fr);
+
+    padding:20px;
+
+    gap:15px;
+
+}
+
+
+
+.photo-card {
+
+    padding:8px;
+
+}
+
+
+}
+
+
+
+
+
+/* =========================
+LIGHTBOX
+========================= */
+
+
+.lightbox {
+
+
+    display:none;
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+    rgba(0,0,0,.8);
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    flex-direction:column;
+
+
+    z-index:500;
+
+
+}
+
+
+
+.lightbox img {
+
+
+    max-width:80%;
+
+
+    max-height:70%;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+.close {
+
+
+    position:absolute;
+
+
+    top:30px;
+
+
+    right:40px;
+
+
+    font-size:60px;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* =========================
+DATE WHEEL
+========================= */
+
+
+.game-page {
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff8f3,
+        #f6d9e6
+    );
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+
+
+
+.game-header h1 {
+
+    font-family:"Parisienne";
+
+    font-size:75px;
+
+    font-weight:400;
+
+}
+
+
+
+.game-header p {
+
+    font-family:"Cormorant Garamond";
+
+    font-size:24px;
+
+    color:#8a6e63;
+
+}
+
+
+
+
+
+.wheel-wrapper {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+
+
+
+
+.wheel-card,
+.result-card {
+
+
+    width:360px;
+
+    max-width:90%;
+
+
+    background:
+
+    rgba(255,255,255,.7);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:25px;
+
+
+    padding:30px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+.wheel-card h2,
+.result-card h2 {
+
+
+    font-family:"Cormorant Garamond";
+
+    font-size:26px;
+
+    color:#5d443d;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+#wheel {
+
+
+    width:130px;
+
+    height:130px;
+
+
+    margin:15px auto 25px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:#fffdf9;
+
+
+    border-radius:50%;
+
+
+    font-size:75px;
+
+
+    box-shadow:
+
+    inset 0 0 15px rgba(0,0,0,.05),
+
+    0 8px 20px rgba(0,0,0,.1);
+
+
+    transition:transform 1.5s ease;
+
+
+}
+
+
+
+
+
+.wheel-card button {
+
+
+    background:#1c1c1c;
+
+    color:white;
+
+
+    font-family:"Cormorant Garamond";
+
+
+    font-size:20px;
+
+
+    padding:10px 30px;
+
+
+    border-radius:30px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.wheel-card button:hover {
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+#result {
+
+
+    min-height:55px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    font-family:"Cormorant Garamond";
+
+
+    font-size:24px;
+
+
+    color:#8a6e63;
+
+
+    background:#fffdf9;
+
+
+    border-radius:15px;
+
+
+    padding:15px;
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.game-header h1 {
+
+font-size:65px;
+
+}
+
+
+.wheel-card,
+.result-card {
+
+padding:25px;
+
+}
+
+
+
+#wheel {
+
+width:120px;
+
+height:120px;
+
+font-size:65px;
+
+}
+
+
+}
+
+
+
+
+/* =========================
+UNDERTALE CAT
+========================= */
+
+
+.undertale-page {
+
+
+    background:black;
+
+
+    min-height:100vh;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    font-family:"Press Start 2P";
+
+
+    padding-top:60px;
+
+
+}
+
+
+
+.battle-box {
+
+
+    width:700px;
+
+
+    max-width:90%;
+
+
+    height:400px;
+
+
+    border:5px solid white;
+
+
+    margin:auto;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.cat-sprite {
+
+
+    font-size:120px;
+
+
+    animation:bounce 1s infinite;
+
+
+}
+
+
+
+.dialogue-box {
+
+
+    width:700px;
+
+
+    max-width:90%;
+
+
+    margin:30px auto;
+
+
+    border:5px solid white;
+
+
+    padding:25px;
+
+
+    text-align:left;
+
+
+}
+
+
+
+
+.love-bar {
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+.bar {
+
+
+    width:300px;
+
+
+    height:25px;
+
+
+    border:3px solid white;
+
+
+    margin:20px auto;
+
+
+}
+
+
+
+#love-fill {
+
+
+    height:100%;
+
+
+    width:0%;
+
+
+    background:#ff4d8d;
+
+
+}
+
+
+
+
+/* =========================
+MUSIC
+========================= */
+
+
+#music-button {
+
+
+    position:fixed;
+
+
+    bottom:30px;
+
+
+    left:30px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    border-radius:50%;
+
+
+    z-index:100;
+
+
+}
+
+
+
+
+
+/* =========================
+LOADING SCREEN
+========================= */
+
+
+#loader {
+
+    position:fixed;
+
+    inset:0;
+
+    background:#fff8f3;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    font-family:"Cormorant Garamond";
+
+    font-size:28px;
+
+    opacity:1;
+
+    transition:opacity .8s ease;
+
+}
+
+
+
+/* javascript adds this class */
+
+#loader.hidden {
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+
+
+
+.walking-cat {
+
+
+    font-size:80px;
+
+
+    animation:
+
+    walk 2s infinite linear;
+
+
+}
+
+
+
+
+@keyframes walk {
+
+
+    0% {
+
+
+        transform:translateX(-120px);
+
+
+    }
+
+
+
+    50% {
+
+
+        transform:translateX(120px);
+
+
+    }
+
+
+
+    100% {
+
+
+        transform:translateX(-120px);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =========================
+ANIMATIONS
+========================= */
+
+
+@keyframes float {
+
+
+    0%,100% {
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+    50% {
+
+
+        transform:translateY(-30px);
+
+
+    }
+
+
+}
+
+
+
+
+@keyframes pulse {
+
+
+    50% {
+
+
+        transform:scale(1.2);
+
+
+    }
+
+
+}
+
+
+
+
+
+@keyframes bounce {
+
+
+    50% {
+
+
+        transform:translateY(-15px);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* =========================
+MOBILE
+========================= */
+
+
+@media(max-width:700px){
+
+
+h1 {
+
+    font-size:75px;
+
+}
+
+
+
+.timer div {
+
+    min-width:90px;
+
+}
+
+
+
+.menu {
+
+    padding:25px;
+
+}
+
+
+
+.gallery-grid {
+
+    padding:25px;
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.paper {
+
+    padding:35px;
+
+}
+
+
+}
+
+/* =========================
+UNDERTALE BUTTONS
+========================= */
+
+
+.undertale-page .actions button {
+
+
+    font-family:"Press Start 2P", monospace;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    color:white;
+
+
+    border:
+
+    3px solid white;
+
+
+    border-radius:15px;
+
+
+    padding:18px 30px;
+
+
+    min-width:140px;
+
+
+    font-size:16px;
+
+
+    letter-spacing:1px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(255,255,255,.15);
+
+
+}
+
+
+
+
+
+.undertale-page .actions button:hover {
+
+
+    background:white;
+
+
+    color:black;
+
+
+    transform:
+
+    translateY(-5px)
+
+    scale(1.05);
+
+
+}
+
+
+
+
+
+.undertale-page .actions {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:25px;
+
+
+    margin-top:50px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.undertale-page .actions button {
+
+
+    min-width:120px;
+
+
+    padding:15px 20px;
+
+
+    font-size:12px;
+
+
+}
+
+
+}
